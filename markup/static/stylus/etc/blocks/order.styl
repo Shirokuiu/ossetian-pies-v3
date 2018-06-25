@@ -1,0 +1,85 @@
+.order
+  margin-bottom 20px
+
+.order__headline
+  margin-bottom 35px
+  
+  font-size 32px
+  line-height 38px
+  color #f04034
+  
+.order__lists
+  margin-bottom 60px
+  padding-left 4%
+  
+.order__list-img-wrap
+  width 275px
+  margin-right 5.4%
+  
+.order__list
+  margin-right 11.4%
+  &:last-child
+    margin-right 0
+  
+.order__list-items
+  margin-bottom 20px
+  &:last-child
+    margin-bottom 0
+  
+.order__list-link
+  position relative
+  
+  font-size 24px
+  line-height 29px
+  color #5c74c5
+  
+  transition 0.2s ease
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    right 0
+    bottom -1px
+    
+    height 1px
+    margin auto
+    
+    background-color #5c74c5
+    
+    transition 0.2s ease
+  &:hover
+    opacity 0.9
+    &::after
+      transform translateY(5px)
+      
+      opacity 0
+      
+.order__list-link-icon
+  position absolute
+  top 5px
+  left -22px
+  bottom 0
+  
+  display block
+  width 9px
+  height 12px
+  margin auto
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    width 100%
+    height 2px
+    
+    background-color #ef4943
+  &::before
+    bottom 4px
+    
+    transform rotate(45deg)
+  &::after
+    bottom -6px
+    
+    transform rotate(-45deg)

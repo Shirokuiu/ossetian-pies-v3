@@ -1,0 +1,111 @@
+.best-sellers__headline
+  margin-bottom 15px
+  
+  font-size 32px
+  line-height 38px
+  color #f04034
+  
+.best-sellers__slider-wrap
+  max-width 1725px
+  margin 0 auto
+  padding 0 20px
+  
+.best-sellers__slider
+  position relative
+  .owl-stage
+    display flex !important
+  .owl-item
+    display flex !important
+    flex-grow 1 !important
+  .owl-dots
+    margin-top 5px !important
+  .owl-dot
+    span
+      width 25px !important
+      height 5px !important
+      
+      background-color #fedabb !important
+      
+      border-radius 0 !important
+      
+      transition 0.2s ease !important
+      &:hover
+        background-color #ed423b !important
+    &.active
+      span
+        background-color #ed423b !important
+    &:focus
+      outline none !important
+  .owl-stage-outer
+    z-index 10 !important
+  .owl-nav
+    position absolute !important
+    top 0 !important
+    left 0
+    right 0
+    bottom 0 !important
+    z-index 5 !important
+    
+    display flex !important
+    justify-content space-between !important
+    height 32px !important
+    margin-top 0 !important
+    margin auto !important
+  .owl-prev,
+  .owl-next
+    position relative
+    left -45px
+    
+    display flex !important
+    justify-content center !important
+    align-items center !important
+    width 32px !important
+    height 32px !important
+    margin 0 !important
+    
+    border 2px solid #ef4c45 !important
+    border-radius 50% !important
+    span
+      position relative !important
+      
+      width 8px !important
+      height 16px !important
+      
+      font-size 0 !important
+      &::before,
+      &::after
+        center-absolute()
+        
+        content '' !important
+        
+        display block !important
+        width 100% !important
+        height 2px !important
+        
+        background-color #ef4c45 !important
+      &::before
+        bottom -5px !important
+        
+        transform rotate(45deg) !important
+      &::after
+        bottom 4px !important
+        
+        transform rotate(-45deg) !important
+    &:hover
+      background-color transparent !important
+    &.disabled
+      border-color #feddbf !important
+      
+      opacity 1 !important
+      span
+        &::before,
+        &::after
+          background-color #feddbf !important
+    &:focus
+      outline none !important
+  .owl-next
+    left 45px
+    
+    transform rotate(180deg) !important
+    
+    

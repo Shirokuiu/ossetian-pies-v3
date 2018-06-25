@@ -1,0 +1,81 @@
+.page-header
+  margin-bottom 22px
+
+.page-header__row-top
+  padding 10px 0
+  padding-top 5px
+  padding-left 10.2%
+  padding-right 2.3%
+  
+.page-header__row-top-delivery-icon
+  width 24px
+  height 24px
+  margin-right 5px
+  
+  background-image url('%=static=%content/delivery-truck.svg')
+  background-repeat no-repeat
+  background-size 100% auto
+  
+.page-header__row-top-payment-text
+  margin-right 15px
+  
+.page-header__row-top-payment-link
+  width 148px
+  height 20px
+  
+  background-image url('%=static=%content/page-header-payment.png')
+  background-repeat no-repeat
+  background-size 100% auto
+  
+.page-header__row-top-time-icon
+  width 24px
+  height 24px
+  margin-right 12px
+  
+  background-image url('%=static=%content/circular-clock.svg')
+  background-repeat no-repeat
+  background-size 100% auto
+  
+.page-header__row-bottom-headline
+  margin-bottom 15px
+  
+  font-size 32px
+  line-height 38px
+  color #000000
+  
+.page-header__row-bottom-text
+  margin-bottom 15px
+  padding-left 20px
+  padding-right 4%
+  
+  font-size 21px
+  line-height 25px
+  color #000000
+  &--order
+    margin-bottom 35px
+  
+.page-header__row-bottom-text-link
+  position relative
+  
+  font-size inherit
+  line-height inherit
+  color #5c74c5
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    
+    height 1px
+    margin auto
+    
+    background-color #5c74c5
+    
+    transition 0.2s ease
+  &:hover
+    &::after
+      transform translateY(2px)
+      
+      opacity 0

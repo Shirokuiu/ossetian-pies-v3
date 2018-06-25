@@ -1,0 +1,190 @@
+.cart-good
+  box-sizing border-box
+  width 325px
+  padding-bottom 15px
+  
+  border 4px solid #f0f0f0
+  border-radius 5px
+  
+  transition 0.2s ease
+  &:hover
+    border-color #FEE37E
+  &--slider
+    width auto
+
+.cart-good__img-wrap
+  position relative
+  
+  margin-bottom 15px
+  padding 2px
+  
+  border-radius 5px
+  
+.cart-good__top
+  position absolute
+  top 14px
+  left 12px
+  
+  display block
+  width 64px
+  height 64px
+  
+  background-image url('%=static=%content/badge.svg')
+  background-repeat no-repeat
+  background-size 100% auto
+  
+.cart-good__buyers-choice
+  position absolute
+  top 9px
+  right 9px
+  
+  padding 5px 12px
+  padding-bottom 8px
+  
+  font-size 15px
+  line-height 18px
+  color #ffffff
+  
+  background-color #31ab37
+  
+.cart-good__headline
+  margin-bottom 20px
+  
+  font-size 24px
+  line-height 29px
+  color #000000
+  
+.cart-good__description-list
+  margin-top auto
+  margin-bottom 18px
+  padding 0 17px
+  &--slider
+    padding 5px 15px
+    
+    border-top 1px solid #f0f0f0
+    border-bottom 1px solid #f0f0f0
+  
+.cart-good__description-input
+  &:checked ~ .cart-good__description-item-text-title
+    color #f04034
+    &::after
+      opacity 1
+  &:checked ~ .cart-good__description-item-text-weight
+    color #f04034
+  
+.cart-good__description-label
+  cursor pointer
+  &:hover
+    .cart-good__description-item-text-title
+      color #f04034
+      &::after
+        opacity 1
+    .cart-good__description-item-text-weight
+      color #f04034
+  
+.cart-good__description-item-text-title
+  position relative
+  
+  padding-bottom 13px
+  
+  color #c0c0c0
+  
+  cursor pointer
+  
+  transition 0.2s ease
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    
+    height 4px
+    margin auto
+    
+    background-color #ed423b
+    
+    opacity 0
+    
+    transition 0.2s ease
+  
+.cart-good__description-label-border
+  width 100%
+  height 1px
+  
+  background-color #dcdcdc
+  
+.cart-good__description-item-text-weight
+  font-size 21px
+  line-height 25px
+  color #c0c0c0
+  
+  transition 0.2s ease
+  
+.cart-good__description-price
+  margin-right 10px
+  
+  font-size 32px
+  line-height 38px
+  color #007700
+  
+.cart-good__description-button-wrap
+  position relative
+  
+  width 150px
+  height 49px
+  &--slider
+    box-sizing border-box
+    width 93%
+    margin 0 auto
+    .cart-good__description-button-count-icon
+      &::before,
+      &::after
+        width 17%
+  
+.cart-good__description-button-buy
+  center-absolute()
+  
+  color #000000
+  
+  background-color #fed037
+  
+  border-radius 5px
+  
+  transition 0.2s ease
+  &:hover
+    background-color #F2C12C
+    
+.cart-good__description-button-count-wrap
+  center-absolute()
+  
+  box-sizing border-box
+  
+  border 3px solid #f97a3b
+  border-radius 5px
+  
+.cart-good__description-button-count-icon
+  position relative
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    width 25%
+    height 3px
+    
+    background-color #ee423b
+  &::before
+    transform rotate(90deg)
+  &--dec
+    &::before
+      display none
+  
+.cart-good__description-button-count-text
+  font-size 29px
+  line-height 38px
+  color #f04034
+  
+  

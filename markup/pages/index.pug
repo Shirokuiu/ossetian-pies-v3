@@ -1,0 +1,943 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+
+    .wrapper
+      .content
+        header.page-header
+          .container
+            .page-header__row-top.row.row--jc-sb
+              .page-header__row-top-delivery.row.row--ai-c
+                span.page-header__row-top-delivery-icon
+                p.page-header__row-top-delivery-text.text.text--fw400 Бесплатная доставка от 1000 руб.
+              .page-header__row-top-payment.row.row--ai-c
+                p.page-header__row-top-payment-text.text.text--fw400 Оплата наличными или по карте:
+                a.page-header__row-top-payment-link(href="#")
+              ul.socials.list.row
+                li.socials__items
+                  a.socials__link.socials__link--vk(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--fb(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--od(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--g(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--tw(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--v(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--w(href="#")
+              .page-header__row-top-time.row.row--ai-c
+                span.page-header__row-top-time-icon
+                p.page-header__row-top-time-text.text.text--fw400 Пекарня работает с 9:00 до 21:00
+            .user-block.row.row--ai-c
+              .logo
+                .logo__img-wrap
+                  img.logo__img(src="%=static=%img/content/logo-header.svg" alt="Логотип")
+                .logo__text-wrap
+                  h2.logo__headline.text.text--uppercase.text--fw900 «Осетинская
+                    br
+                    | равнина»
+                  p.logo__text.text.text--fw500 осетинские пироги
+              ul.user-block-list.list.row.row--jc-sb.grow
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Каталог
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Доставка
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Оплата
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Акции
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Отзывы
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Контакты
+              a.user-block__basket.text--td-none(href="#" data-total-price="0" data-count="0")
+                span.user-block__basket-count.text--center.text--fw600 0
+                span.user-block__basket-icon
+                .row.row--jc-c
+                  p.user-block__basket-price.user-block__basket-price--num.text.text--fw600 0 
+                  p.user-block__basket-price.user-block__basket-price--text.text.text--fw600 руб.
+              .user-block__tel.column
+                a.user-block__tel-link.text--td-none.text--fw600(href="tel:74952007580") +7 (495)200-75-80
+                a.user-block__tel-feedback.text--td-none.text--fw500(href="#") Обратный звонок
+            .page-header__row-bottom
+              h1.page-header__row-bottom-headline.text.text--fw600.text--center Осетинские пироги с бесплатной доставкой в Москве
+              p.page-header__row-bottom-text.text Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - 
+                a.page-header__row-bottom-text-link.text--td-none(href="#") сладкие
+                |, 
+                a.page-header__row-bottom-text-link.text--td-none(href="#") мясные
+                |, 
+                a.page-header__row-bottom-text-link.text--td-none(href="#") с капустой
+                |, 
+                a.page-header__row-bottom-text-link.text--td-none(href="#") сырные
+                |, 
+                | и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!
+              nav.main-nav.row
+                h2.main-nav__list-headline.text.text--fw400.text--uppercase Категории:
+                ul.main-nav__list.list.row
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Постные
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Традиционные
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Фруктовые
+                .main-nav__border
+                h2.main-nav__list-headline.text.text--fw400.text--uppercase Начинка:
+                ul.main-nav__list.list.row.row--jc-sb.grow
+                  li.main-nav__items
+                    a.main-nav__link.main-nav__link--active.text--uppercase.text--td-none.text--fw400(href="#") Все
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Говядина
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Курица
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Рыба
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Капуста
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Картофель
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Грибы
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Перец
+                  li.main-nav__items
+                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Зелень
+        main.page-content
+          section.popular-good
+            .container
+              h2.popular-good__headline.text.text--fw600.text--center Популярные осетинские пироги
+              ul.popular-good__carts-list.list.row.row--jc-sb.row--wrap
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      p.cart-good__buyers-choice.text.text--fw500 Выбор покупателей
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С говядиной
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight1")#radioSmall
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight1" checked)#radioMedium
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight1")#radioBig
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") Со свекольными листьями и осетинским сыром
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall2")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight2")#radioSmall2
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium2")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight2" checked)#radioMedium2
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig2")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight2")#radioBig2
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall3")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight3")#radioSmall3
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium3")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight3" checked)#radioMedium3
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig3")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight3")#radioBig3
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С осетинским сыром
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall4")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight4")#radioSmall4
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium4")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight4" checked)#radioMedium4
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig4")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight4")#radioBig4
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С курицей, сыром и грибами
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall5")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight5")#radioSmall5
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium5")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight5" checked)#radioMedium5
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig5")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight5")#radioBig5
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С говядиной
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall6")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight6")#radioSmall6
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium6")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight6" checked)#radioMedium6
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig6")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight6")#radioBig6
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") Со свекольными листьями и осетинским сыром
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall7")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight7")#radioSmall7
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium7")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight7" checked)#radioMedium7
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig7")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight7")#radioBig7
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      p.cart-good__buyers-choice.text.text--fw500 Выбор покупателей
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall8")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight8")#radioSmall8
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium8")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight8" checked)#radioMedium8
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig8")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight8")#radioBig8
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С осетинским сыром
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall9")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight9")#radioSmall9
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium9")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight9" checked)#radioMedium9
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig9")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight9")#radioBig9
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                li.popular-good__carts-items.row
+                  .cart-good.column
+                    .cart-good__img-wrap
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С курицей, сыром и грибами
+                        ul.cart-good__description-list.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioSmall10")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight10")#radioSmall10
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 0,8 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMedium10")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight10" checked)#radioMedium10
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioBig10")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeight10")#radioBig10
+                              p.cart-good__description-item-text-title.text.text--fw500 Маленький
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,4 кг
+                        .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                          p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                          p.cart-good__description-price.text.text--fw600 руб.
+                          .cart-good__description-button-wrap
+                            button.cart-good__description-button-buy.button.text--fw500(type="button") Купить
+                            .cart-good__description-button-count-wrap.row.hidden
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                              p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                              button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+          section.features
+            .container
+              h2.features__headline.text.text--center.text--fw600 Основные преимущества пекарни «Осетинская равнина»
+            .features__description-wrap
+              .container
+                ul.features__description-list.list.row.row--jc-sa
+                  li.features__description-items.column.column--ai-c
+                    .features__description-item-img-wrap
+                      img.features__description-item-img(src="%=static=%img/content/pizzas.svg" alt="")
+                    p.features__description-item-text.text.text--fw500.text--center 1. Горячие и свежие пироги,
+                      br
+                      | к вашему столу
+                  li.features__description-items.column.column--ai-c
+                    .features__description-item-img-wrap
+                      img.features__description-item-img(src="%=static=%img/content/van.svg" alt="")
+                    p.features__description-item-text.text.text--fw500.text--center 2. Бесплатная доставка
+                      br
+                      | в пределах Москвы
+                  li.features__description-items.column.column--ai-c
+                    .features__description-item-img-wrap
+                      img.features__description-item-img(src="%=static=%img/content/healthy-food.svg" alt="")
+                    p.features__description-item-text.text.text--fw500.text--center 3. Большой ассортимент
+                      br
+                      | начинок для пирогов
+                  li.features__description-items.column.column--ai-c
+                    .features__description-item-img-wrap
+                      img.features__description-item-img(src="%=static=%img/content/transaction.svg" alt="")
+                    p.features__description-item-text.text.text--fw500.text--center 4. Удобные способы заказа
+                      br
+                      | нашей продукции
+                  li.features__description-items.column.column--ai-c
+                    .features__description-item-img-wrap
+                      img.features__description-item-img(src="%=static=%img/content/basket.svg" alt="")
+                    p.features__description-item-text.text.text--fw500.text--center 5. Акции и спецпредложения!
+                    p.features__description-item-text.features__description-item-text--birthday.text.text--fw500.text--center В День Рождения скидка 10%
+          .order
+            .container
+              p.page-header__row-bottom-text.page-header__row-bottom-text--order.text Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - 
+                a.page-header__row-bottom-text-link.text--td-none(href="#") сладкие
+                |, 
+                a.page-header__row-bottom-text-link.text--td-none(href="#") мясные
+                |, 
+                a.page-header__row-bottom-text-link.text--td-none(href="#") с капустой
+                |, 
+                a.page-header__row-bottom-text-link.text--td-none(href="#") сырные
+                |, 
+                | и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!
+              h2.order__headline.text.text--center У нас вы можете заказать осетинские пироги:
+              .order__lists.row
+                .order__list-img-wrap
+                  img.order__list-img(src="%=static=%img/content/order-img.png")
+                .order__lists__wrap.row.grow
+                  ul.order__list.list
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") на День рождения
+                        span.order__list-link-icon
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") на торжество
+                        span.order__list-link-icon
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") на дом
+                        span.order__list-link-icon
+                  ul.order__list.list
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") на свадьбу
+                        span.order__list-link-icon
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") в офис за 45 минут
+                        span.order__list-link-icon
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") на Новый год
+                        span.order__list-link-icon
+                  ul.order__list.list
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") на Юбилей
+                        span.order__list-link-icon
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") на работу
+                        span.order__list-link-icon
+                    li.order__list-items
+                      a.order__list-link.text--td-none(href="#") оптом
+                        span.order__list-link-icon
+          section.best-sellers
+            .container
+              h2.best-sellers__headline.text.text--center.text--fw600 Хиты продаж
+            .best-sellers__slider-wrap
+              .best-sellers__slider.owl-carousel.owl-theme
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider1" checked)#radioMediumSlider
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider2")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider2" checked)#radioMediumSlider2
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider3")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider3" checked)#radioMediumSlider3
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider4")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider4" checked)#radioMediumSlider4
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider5")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider5" checked)#radioMediumSlider5
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider6")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider6" checked)#radioMediumSlider6
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider7")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider7" checked)#radioMediumSlider7
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider8")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider8" checked)#radioMediumSlider8
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider9")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider9" checked)#radioMediumSlider9
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider10")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider10" checked)#radioMediumSlider10
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider11")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider11" checked)#radioMediumSlider11
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider12")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider12" checked)#radioMediumSlider12
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider13")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider13" checked)#radioMediumSlider13
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider14")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider14" checked)#radioMediumSlider14
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+                .best-sellers__slider-slide.row
+                  .cart-good.cart-good--slider.column
+                    .cart-good__img-wrap
+                      span.cart-good__top
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                    .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
+                      .cart-good__description-wrap.grow.column
+                        a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
+                        ul.cart-good__description-list.cart-good__description-list--slider.list.row.row--jc-sb
+                          li.cart-good__description-items
+                            label.cart-good__description-label.d-block(for="radioMediumSlider15")
+                              input.cart-good__description-input.input.input--radio(type="radio" name="radioGroupWeightSlider15" checked)#radioMediumSlider15
+                              p.cart-good__description-item-text-title.text.text--fw500 Средний
+                              .cart-good__description-label-border
+                              p.cart-good__description-item-text-weight.text.text--center.text--fw600 1,2 кг
+                          li.cart-good__description-items.column.column--jc-c
+                            .cart-good__description-price-wrap.row.row--jc-c.row--ai-c
+                              p.cart-good__description-price.cart-good__description-price--text.text.text--fw600 750
+                              p.cart-good__description-price.text.text--fw600 руб.
+                        .cart-good__description-button-wrap.cart-good__description-button-wrap--slider
+                          button.cart-good__description-button-buy.button.text--fw500(type="button") Положить в корзину
+                          .cart-good__description-button-count-wrap.row.hidden
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--dec.button.grow(type="button")
+                            p.cart-good__description-button-count-text.text.text--fw500.grow 1
+                            button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
+
+        
+      footer.page-footer
+        .footer-content
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='%=static=%js/separate-js/owl.carousel.min.js')
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
