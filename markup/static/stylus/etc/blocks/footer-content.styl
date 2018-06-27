@@ -1,0 +1,91 @@
+.footer-content
+  padding-top 65px
+  padding-bottom 27px
+  
+  background-color #db3148
+  
+.footer-content__yandex-analytics
+  margin-bottom 12px
+  
+.footer-content__yandex-analytics-img-wrap
+  width 90px
+  
+.footer-content__copyright-text
+  color #ff9d7a
+  
+.footer-content__copyright-developers-link
+  &:hover
+    .footer-content__copyright-developers-text
+      color #ffffff
+      &::after
+        width 0
+      
+        opacity 0
+  
+.footer-content__copyright-developers-text
+  position relative
+  
+  margin-right 20px
+  
+  color #ff9d7a
+  
+  transition 0.3s ease
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    right 0
+    bottom -1px
+    
+    width 100%
+    height 1px
+    margin auto
+    
+    background-color #ff9d7a
+    
+    transition 0.4s ease
+  &:hover
+    color #ffffff
+    &::after
+      width 0
+      
+      opacity 0
+      
+@media(max-width 1160px)
+  .footer-content
+    padding-top 45px
+    
+  .footer-content__copyright-developers-text
+    transition none
+    &::after
+      transition none
+      
+@media(max-width 860px)
+  .footer-content__copyright-text
+    order 1
+    
+  .footer-content__copyright-developers-link
+    align-items center
+    margin-bottom 20px
+  
+  .footer-content__copyright
+    flex-direction column
+    
+@media(max-width 540px)
+  .footer-content__copyright-developers-link
+    flex-direction column
+    margin-bottom 10px
+    
+  .footer-content__copyright-developers-text
+    margin-right 0
+    margin-bottom 15px
+    
+@media(max-width 420px)
+  .footer-content__copyright-text
+    font-size 15px
+    line-height 18px
+    
+@media(max-width 375px)
+  .footer-content
+    padding-top 20px

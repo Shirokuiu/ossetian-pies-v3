@@ -1,6 +1,9 @@
 .page-header
+  min-height 348px
   margin-bottom 22px
-
+  &--basket
+    min-height 150px
+      
 .page-header__row-top
   padding 10px 0
   padding-top 5px
@@ -35,6 +38,44 @@
   background-image url('%=static=%content/circular-clock.svg')
   background-repeat no-repeat
   background-size 100% auto
+  
+.page-header__content
+  &--sticky
+    position fixed
+    top 0
+    left 0
+    right 0
+    z-index 20
+    
+    max-width 1725px
+    margin 0 auto
+    padding 0 20px
+    .page-header__row-bottom-headline,
+    .page-header__row-bottom-text
+      display none
+    .logo
+      &--header
+        .logo__img-wrap
+          display none
+        .logo__text-wrap
+          margin-left 0
+        .logo__headline
+          width auto
+        .logo__text
+          display none
+    .user-block
+      &--header
+        margin-bottom 0
+        padding-left 1.4%
+        
+        background-color #ffffff
+        .user-block__basket
+          position absolute
+          top 180px
+          right 20px
+          z-index 30
+        .user-block__tel-feedback
+          display none
   
 .page-header__row-bottom-headline
   margin-bottom 15px
@@ -79,3 +120,167 @@
       transform translateY(2px)
       
       opacity 0
+      
+@media(max-width 1500px)
+  .page-header__row-top
+    padding-left 0
+    padding-right 0
+    
+  .page-header__content
+    &--sticky
+      .logo
+        &--header
+          .logo__headline
+            margin-right 20px
+    
+@media(max-width 1400px)
+  .page-header__row-bottom-headline
+    font-size 29px
+    line-height 22px
+    
+  .page-header__row-bottom-text
+    font-size 19px
+    line-height 23px
+    
+@media(max-width 1350px)
+  .page-header__row-top-delivery-text,
+  .page-header__row-top-payment-text,
+  .page-header__row-top-time-text
+    font-size 16px
+    line-height 19px
+    
+@media(max-width 1200px)
+  .page-header__row-bottom-text
+    padding-left 0
+    
+@media(max-width 1160px)
+  .page-header__row-top-delivery-icon,
+  .page-header__row-top-time-icon
+    display none
+    
+@media(max-width 1080px)
+  .page-header__row-top-delivery-text,
+  .page-header__row-top-payment-text,
+  .page-header__row-top-time-text
+    font-size 14px
+    line-height 17px
+    
+@media(max-width 1160px)
+  .page-header__content
+    &--sticky
+      .user-block
+        &--header
+          .user-block__basket
+            position relative
+            top auto
+            right auto
+            
+            display flex
+            flex-direction row-reverse
+            padding-top 5px
+            padding-bottom 5px
+          .user-block__basket-count
+            position static
+          .user-block__basket-icon
+            display none
+          .user-block__basket-currency-wrap
+            margin-right 10px
+  
+  .page-header__row-bottom-text
+    text-align center
+    
+  .page-header__row-bottom-text-link
+    &::after
+      transition none
+      
+@media(max-width 1000px)
+  .page-header
+    min-height auto
+    &--basket
+      margin-bottom 80px
+  
+  .page-header__row-top
+    display none
+    
+  .page-header__content
+    &--sticky
+      position static
+      .logo
+        &--header
+          box-sizing border-box
+          display flex
+          align-items center
+          width 50%
+          padding 15px 10px
+          padding-bottom 14px
+          .logo__img-wrap
+            display none
+          .logo__text-wrap
+            order 1
+            margin-left auto
+            margin-right auto
+          .logo__text
+            display none
+          .logo__headline
+            width auto
+            margin-right 0
+      .user-block
+        &--header
+          position fixed
+          left 0
+          right 0
+          z-index 10
+
+          align-items flex-start
+          margin-bottom 0
+          padding 0
+
+          background-color #ffffff
+          .user-block__basket
+            position relative
+            top auto
+            right auto
+
+            box-sizing border-box
+            display flex
+            width 50%
+            flex-direction row-reverse
+            padding-top 5px
+            margin-left 0
+            padding 15px 10px
+          .user-block__basket-count
+            position static
+          .user-block__basket-icon
+            display none
+          .user-block__basket-currency-wrap
+            margin-right 10px
+          .user-block-list
+            display none
+  
+  .page-header__row-bottom
+    margin-top 80px
+    
+@media(max-width 960px)
+  .page-header
+    margin-bottom 5px
+    &--basket
+      margin-bottom 85px
+    
+  .page-header__row-bottom-text
+    margin-bottom 0
+    &--order
+      margin-bottom 5px
+    
+@media(max-width 740px)
+  .page-header__row-bottom-headline
+    font-size 20px
+    line-height 22px
+    
+  .page-header__row-bottom-text
+    font-size 16px
+    line-height 23px
+    
+@media(max-width 650px)
+  .page-header__row-bottom-text
+    &--order
+      display none

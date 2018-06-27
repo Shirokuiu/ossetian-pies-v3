@@ -11,6 +11,13 @@
     border-color #FEE37E
   &--slider
     width auto
+    .cart-good__description-price
+      width auto
+      margin-right 10px
+      &:nth-child(2)
+        margin-right 0
+        
+        text-align auto
 
 .cart-good__img-wrap
   position relative
@@ -122,12 +129,20 @@
   
   transition 0.2s ease
   
+.cart-good__description-price-wrap
+  padding-left 10px
+  padding-right 10px
+  
 .cart-good__description-price
+  width 75px
   margin-right 10px
   
   font-size 32px
   line-height 38px
   color #007700
+  text-align right
+  &:nth-child(2)
+    text-align left
   
 .cart-good__description-button-wrap
   position relative
@@ -145,6 +160,8 @@
   
 .cart-good__description-button-buy
   center-absolute()
+  
+  padding-bottom 7px
   
   color #000000
   
@@ -186,5 +203,40 @@
   font-size 29px
   line-height 38px
   color #f04034
+  
+@media(max-width 1339px)
+  .cart-good
+    width 100%
+    
+  .cart-good__description-button-wrap
+    width 70%
+    &--slider
+      width 93%
+    
+  .cart-good__description-button-count-icon
+    &::before,
+    &::after
+      width 12%
+    
+@media(max-width 1160px)
+  .cart-good
+    transition none
+  
+  .cart-good__description-item-text-title
+    transition none
+    &::after
+      transition none
+      
+  .cart-good__description-item-text-weight
+    transition none
+    
+  .cart-good__description-button-buy
+    transition none
+    
+@media(max-width 360px)
+  .cart-good__description-button-count-icon
+    &::before,
+    &::after
+      width 25%
   
   

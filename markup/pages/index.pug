@@ -35,79 +35,81 @@ html(class="no-js", lang="ru")
               .page-header__row-top-time.row.row--ai-c
                 span.page-header__row-top-time-icon
                 p.page-header__row-top-time-text.text.text--fw400 Пекарня работает с 9:00 до 21:00
-            .user-block.row.row--ai-c
-              .logo
-                .logo__img-wrap
-                  img.logo__img(src="%=static=%img/content/logo-header.svg" alt="Логотип")
-                .logo__text-wrap
-                  h2.logo__headline.text.text--uppercase.text--fw900 «Осетинская
-                    br
-                    | равнина»
-                  p.logo__text.text.text--fw500 осетинские пироги
-              ul.user-block-list.list.row.row--jc-sb.grow
-                li.user-block-items
-                  a.user-block-link.text--td-none.text--fw500(href="#") Каталог
-                li.user-block-items
-                  a.user-block-link.text--td-none.text--fw500(href="#") Доставка
-                li.user-block-items
-                  a.user-block-link.text--td-none.text--fw500(href="#") Оплата
-                li.user-block-items
-                  a.user-block-link.text--td-none.text--fw500(href="#") Акции
-                li.user-block-items
-                  a.user-block-link.text--td-none.text--fw500(href="#") Отзывы
-                li.user-block-items
-                  a.user-block-link.text--td-none.text--fw500(href="#") Контакты
-              a.user-block__basket.text--td-none(href="#" data-total-price="0" data-count="0")
-                span.user-block__basket-count.text--center.text--fw600 0
-                span.user-block__basket-icon
-                .row.row--jc-c
-                  p.user-block__basket-price.user-block__basket-price--num.text.text--fw600 0 
-                  p.user-block__basket-price.user-block__basket-price--text.text.text--fw600 руб.
-              .user-block__tel.column
-                a.user-block__tel-link.text--td-none.text--fw600(href="tel:74952007580") +7 (495)200-75-80
-                a.user-block__tel-feedback.text--td-none.text--fw500(href="#") Обратный звонок
-            .page-header__row-bottom
-              h1.page-header__row-bottom-headline.text.text--fw600.text--center Осетинские пироги с бесплатной доставкой в Москве
-              p.page-header__row-bottom-text.text Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - 
-                a.page-header__row-bottom-text-link.text--td-none(href="#") сладкие
-                |, 
-                a.page-header__row-bottom-text-link.text--td-none(href="#") мясные
-                |, 
-                a.page-header__row-bottom-text-link.text--td-none(href="#") с капустой
-                |, 
-                a.page-header__row-bottom-text-link.text--td-none(href="#") сырные
-                |, 
-                | и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!
-              nav.main-nav.row
-                h2.main-nav__list-headline.text.text--fw400.text--uppercase Категории:
-                ul.main-nav__list.list.row
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Постные
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Традиционные
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Фруктовые
-                .main-nav__border
-                h2.main-nav__list-headline.text.text--fw400.text--uppercase Начинка:
-                ul.main-nav__list.list.row.row--jc-sb.grow
-                  li.main-nav__items
-                    a.main-nav__link.main-nav__link--active.text--uppercase.text--td-none.text--fw400(href="#") Все
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Говядина
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Курица
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Рыба
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Капуста
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Картофель
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Грибы
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Перец
-                  li.main-nav__items
-                    a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Зелень
+            .page-header__content
+              .user-block.user-block--header.row.row--ai-c
+                .logo.logo--header
+                  .logo__img-wrap
+                    img.logo__img(src="%=static=%img/content/logo-header.svg" alt="Логотип")
+                  .logo__text-wrap
+                    h2.logo__headline.text.text--uppercase.text--fw900 «Осетинская равнина»
+                    p.logo__text.text.text--fw500 осетинские пироги
+                  .logo__burger-icon
+                    != pugHelpers.Icon.call(locals, {iconName: 'burger', className: 'burger'})
+                ul.user-block-list.list.row.row--jc-sb.grow
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Каталог
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Доставка
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Оплата
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Акции
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Отзывы
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Контакты
+                a.user-block__basket.text--td-none(href="basket.html" data-total-price="0" data-count="0")
+                  span.user-block__basket-count.text--center.text--fw600 0
+                  span.user-block__basket-icon
+                  .user-block__basket-currency-wrap.row.row--jc-c
+                    p.user-block__basket-price.user-block__basket-price--num.text.text--fw600 0 
+                    p.user-block__basket-price.user-block__basket-price--text.text.text--fw600 руб.
+                .user-block__tel.column
+                  a.user-block__tel-link.text--td-none.text--fw600(href="tel:74952007580") +7 (495)200-75-80
+                  a.user-block__tel-feedback.text--td-none.text--fw500(href="#") Обратный звонок
+              .page-header__row-bottom
+                h1.page-header__row-bottom-headline.text.text--fw600.text--center Осетинские пироги с бесплатной доставкой в Москве
+                p.page-header__row-bottom-text.text Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - 
+                  a.page-header__row-bottom-text-link.text--td-none(href="#") сладкие
+                  |, 
+                  a.page-header__row-bottom-text-link.text--td-none(href="#") мясные
+                  |, 
+                  a.page-header__row-bottom-text-link.text--td-none(href="#") с капустой
+                  |, 
+                  a.page-header__row-bottom-text-link.text--td-none(href="#") сырные
+                  |, 
+                  | и другие. Заказ осетинских пирогов в Москве с доставкой на дом и в офис выполняется оперативно: приготовление занимает 25-90 минут, а доставка от 30 минут до часа!
+                nav.main-nav.row
+                  button.main-nav__close.button(type="button")
+                  h2.main-nav__list-headline.main-nav__list-headline--category.text.text--fw400.text--uppercase Категории:
+                  ul.main-nav__list.main-nav__list--category.list.row
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Постные
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Традиционные
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Фруктовые
+                  .main-nav__border
+                  h2.main-nav__list-headline.text.text--fw400.text--uppercase Начинка:
+                  ul.main-nav__list.list.row.row--jc-sb.grow
+                    li.main-nav__items
+                      a.main-nav__link.main-nav__link--active.text--uppercase.text--td-none.text--fw400(href="#") Все
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Говядина
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Курица
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Рыба
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Капуста
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Картофель
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Грибы
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Перец
+                    li.main-nav__items
+                      a.main-nav__link.text--uppercase.text--td-none.text--fw400(href="#") Зелень
         main.page-content
           section.popular-good
             .container
@@ -118,7 +120,7 @@ html(class="no-js", lang="ru")
                     .cart-good__img-wrap
                       span.cart-good__top
                       p.cart-good__buyers-choice.text.text--fw500 Выбор покупателей
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С говядиной
@@ -153,7 +155,7 @@ html(class="no-js", lang="ru")
                 li.popular-good__carts-items.row
                   .cart-good.column
                     .cart-good__img-wrap
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") Со свекольными листьями и осетинским сыром
@@ -189,7 +191,7 @@ html(class="no-js", lang="ru")
                   .cart-good.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -224,7 +226,7 @@ html(class="no-js", lang="ru")
                 li.popular-good__carts-items.row
                   .cart-good.column
                     .cart-good__img-wrap
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С осетинским сыром
@@ -259,7 +261,7 @@ html(class="no-js", lang="ru")
                 li.popular-good__carts-items.row
                   .cart-good.column
                     .cart-good__img-wrap
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С курицей, сыром и грибами
@@ -294,7 +296,7 @@ html(class="no-js", lang="ru")
                 li.popular-good__carts-items.row
                   .cart-good.column
                     .cart-good__img-wrap
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара" )
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С говядиной
@@ -329,7 +331,7 @@ html(class="no-js", lang="ru")
                 li.popular-good__carts-items.row
                   .cart-good.column
                     .cart-good__img-wrap
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") Со свекольными листьями и осетинским сыром
@@ -365,7 +367,7 @@ html(class="no-js", lang="ru")
                   .cart-good.column
                     .cart-good__img-wrap
                       p.cart-good__buyers-choice.text.text--fw500 Выбор покупателей
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -400,7 +402,7 @@ html(class="no-js", lang="ru")
                 li.popular-good__carts-items.row
                   .cart-good.column
                     .cart-good__img-wrap
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С осетинским сыром
@@ -435,7 +437,7 @@ html(class="no-js", lang="ru")
                 li.popular-good__carts-items.row
                   .cart-good.column
                     .cart-good__img-wrap
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С курицей, сыром и грибами
@@ -503,7 +505,7 @@ html(class="no-js", lang="ru")
                     p.features__description-item-text.text.text--fw500.text--center 5. Акции и спецпредложения!
                     p.features__description-item-text.features__description-item-text--birthday.text.text--fw500.text--center В День Рождения скидка 10%
           .order
-            .container
+            .container.container--order
               p.page-header__row-bottom-text.page-header__row-bottom-text--order.text Заказать осетинские пироги с доставкой в Москве можно с 8:00 до 21:00 по телефону +7 (495) 324-90-00 или круглосуточно на сайте через корзину. На ваш выбор мы предлагаем услуги 4 пекарен, в которых выпекаются осетинские пироги на любой вкус - 
                 a.page-header__row-bottom-text-link.text--td-none(href="#") сладкие
                 |, 
@@ -549,6 +551,187 @@ html(class="no-js", lang="ru")
                     li.order__list-items
                       a.order__list-link.text--td-none(href="#") оптом
                         span.order__list-link-icon
+              .order__table-wrap
+                h2.order__headline.order__headline--table.text.text--center Стоимость осетинских пирогов
+                table.order__table
+                  tr.order__table-title-tr
+                    td.order__table-td
+                      p.order__table-title.order__table-title--headline.text.text--fw500.text--center Осетинские пироги с начинкой
+                    td.order__table-td
+                      p.order__table-price.order__table-price--headline.text.text--fw600.text--center 800 г
+                    td.order__table-td
+                      p.order__table-price.order__table-price--headline.text.text--fw600.text--center 1200 г
+                    td.order__table-td
+                      p.order__table-price.order__table-price--headline.text.text--fw600.text--center 1400 г
+                    td.order__table-td
+                      p.order__table-title.order__table-title--headline.text.text--fw500.text--center Время приготовления
+                  tr.order__table-description-tr
+                    td.order__table-td
+                      span.order__table-top-icon
+                      p.order__table-title.text.text--fw500.text--center Пирог с мясом «Фыдджин»
+                      .order__table-prices-mobile
+                        ul.order__table-prices-list.list.row
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices1")
+                              p.order__table-prices-weight.text.text--fw600.text--center 800 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 750 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices1" checked)
+                              p.order__table-prices-weight.text.text--fw600.text--center 1200 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 750 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices1")
+                              p.order__table-prices-weight.text.text--fw600.text--center 1400 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 750 руб.
+                        .order__table-prices-buy-wrap      
+                          button.order__table-prices-buy.button(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.order__table-price.text.text--fw600.text--center 750 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 750 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 750 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td
+                      p.order__table-title.text.text--fw500.text--center от 20 минут
+                  tr.order__table-description-tr
+                    td.order__table-td
+                      p.order__table-title.text.text--fw600.text--center Пирог с сыром осетинским (уалибах)
+                      .order__table-prices-mobile
+                        ul.order__table-prices-list.list.row
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices23")
+                              p.order__table-prices-weight.text.text--fw600.text--center 800 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices23" checked)
+                              p.order__table-prices-weight.text.text--fw600.text--center 1200 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices23")
+                              p.order__table-prices-weight.text.text--fw600.text--center 1400 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                        .order__table-prices-buy-wrap      
+                          button.order__table-prices-buy.button(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td
+                      p.order__table-title.text.text--fw500.text--center от 30 минут
+                  tr.order__table-description-tr
+                    td.order__table-td
+                      span.order__table-top-icon
+                      p.order__table-title.text.text--fw500.text--center Пирог с мясом «Фыдджин»
+                      .order__table-prices-mobile
+                        ul.order__table-prices-list.list.row
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices3")
+                              p.order__table-prices-weight.text.text--fw600.text--center 800 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 850 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices3" checked)
+                              p.order__table-prices-weight.text.text--fw600.text--center 1200 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 850 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices3")
+                              p.order__table-prices-weight.text.text--fw600.text--center 1400 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 850 руб.
+                        .order__table-prices-buy-wrap      
+                          button.order__table-prices-buy.button(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 850 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 850 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 850 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td
+                      p.order__table-title.text.text--fw500.text--center от 35 минут
+                  tr.order__table-description-tr
+                    td.order__table-td
+                      p.order__table-title.text.text--fw600.text--center Пирог с сыром осетинским (уалибах)
+                      .order__table-prices-mobile
+                        ul.order__table-prices-list.list.row
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices4")
+                              p.order__table-prices-weight.text.text--fw600.text--center 800 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices4" checked)
+                              p.order__table-prices-weight.text.text--fw600.text--center 1200 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices4")
+                              p.order__table-prices-weight.text.text--fw600.text--center 1400 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                        .order__table-prices-buy-wrap      
+                          button.order__table-prices-buy.button(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td
+                      p.order__table-title.text.text--fw500.text--center от 15 минут
+                  tr.order__table-description-tr
+                    td.order__table-td
+                      p.order__table-title.text.text--fw500.text--center Пирог с мясом «Фыдджин»
+                      .order__table-prices-mobile
+                        ul.order__table-prices-list.list.row
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices5")
+                              p.order__table-prices-weight.text.text--fw600.text--center 800 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices5" checked)
+                              p.order__table-prices-weight.text.text--fw600.text--center 1200 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                          li.order__table-prices-items
+                            label.order__table-prices-label.d-block
+                              input.order__table-prices-input.input.input--radio(type="radio" name="radioTablePrices5")
+                              p.order__table-prices-weight.text.text--fw600.text--center 1400 г
+                              p.order__table-prices-currency.text.text--fw600.text--center 800 руб.
+                        .order__table-prices-buy-wrap      
+                          button.order__table-prices-buy.button(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td.order__table-td--price
+                      p.order__table-price.text.text--fw600.text--center 800 руб.
+                      button.order__table-buy.button.text--fw500(type="button") В корзину
+                    td.order__table-td
+                      p.order__table-title.text.text--fw500.text--center от 20 минут
           section.best-sellers
             .container
               h2.best-sellers__headline.text.text--center.text--fw600 Хиты продаж
@@ -558,7 +741,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -583,7 +766,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -608,7 +791,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -633,7 +816,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -658,7 +841,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -683,7 +866,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -708,7 +891,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -733,7 +916,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -758,7 +941,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -783,7 +966,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -808,7 +991,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -833,7 +1016,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -858,7 +1041,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -883,7 +1066,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -908,7 +1091,7 @@ html(class="no-js", lang="ru")
                   .cart-good.cart-good--slider.column
                     .cart-good__img-wrap
                       span.cart-good__top
-                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg")
+                      img.cart-good__img(src="%=static=%img/content/cart-good-img.jpg" alt="Картинка товара")
                     .cart-good__description.grow.column(data-basic-price="750" data-total-price="750" data-count="0")
                       .cart-good__description-wrap.grow.column
                         a.cart-good__headline.text--fw600.text--center.text--td-none.d-block(href="#") С сыром, шпинатом и др. зеленью
@@ -930,9 +1113,45 @@ html(class="no-js", lang="ru")
                             p.cart-good__description-button-count-text.text.text--fw500.grow 1
                             button.cart-good__description-button-count-icon.cart-good__description-button-count-icon--inc.button.grow(type="button")
 
-        
       footer.page-footer
         .footer-content
+          .container
+            .user-block.user-block--footer.row.row--ai-c
+              .logo.logo--footer
+                .logo__img-wrap
+                  img.logo__img(src="%=static=%img/content/logo-header.svg" alt="Логотип")
+                .logo__text-wrap
+                  h2.logo__headline.text.text--uppercase.text--fw900 «Осетинская
+                    br
+                    | равнина»
+                  p.logo__text.text.text--fw500 осетинские пироги
+              ul.user-block-list.list.row.grow
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Каталог
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Доставка
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Оплата
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Акции
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Отзывы
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Контакты
+              .user-block__tel.column
+                a.user-block__tel-link.text--td-none.text--fw600.text--right(href="tel:74952007580") +7 (495)200-75-80
+                a.user-block__tel-feedback.text--td-none.text--fw500(href="#") Москва, Большой переулок, 23
+            .footer-content__yandex-analytics.row.row--jc-fe
+              .footer-content__yandex-analytics-img-wrap
+                img.footer-content__yandex-analytics-img(src="%=static=%img/content/yandex-analytics.png" alt="Яндекс аналитика")
+            .footer-content__copyright.row.row--jc-sb.row--ai-c
+              p.footer-content__copyright-text.text © 2006 - 2018 Пекарня «Осетинская равнина»
+              a.footer-content__copyright-developers-link.text--td-none.row.row--ai-c(href="#")
+                p.footer-content__copyright-developers-text.text Создание и продвижение сайтов
+                .footer-content__copyright-developers-img-wrap
+                  img.footer-content__copyright-developers-img(src="%=static=%img/content/developers.png" alt="Разработчики")
+                
+            
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();

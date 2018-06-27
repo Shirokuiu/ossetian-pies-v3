@@ -6,6 +6,35 @@
   padding-bottom 7px
   
   border 3px solid #ed423b
+  &--basket
+    margin-bottom 30px
+  &--footer
+    margin-bottom 20px
+    padding-top 12px
+    padding-bottom 12px
+    
+    border-color #fd9d7e
+    .user-block-items
+      margin-right 6%
+      &:last-child
+        margin-right 0
+    .user-block-link
+      color #fd9d7e
+      
+      transition 0.2s ease
+      &::after
+        background-color #fd9d7e
+        
+        transition 0.3s ease
+      &:hover
+        color #ffffff
+        &::after
+          width 0
+          
+          transform translateY(0)
+    .user-block__tel-link,
+    .user-block__tel-feedback
+      color #ffffff
   
 .user-block-link,
 .user-block__tel-feedback
@@ -22,6 +51,7 @@
     right 0
     bottom -1px
     
+    width 100%
     height 1px
     margin auto
     
@@ -91,3 +121,140 @@
   
 .user-block__tel-feedback
   align-self flex-start
+  
+@media(max-width 1500px)
+  .user-block
+    padding-left 1.9%
+    padding-right 1.9%
+    
+  .user-block__basket
+    margin-left 1.5%
+    
+@media(max-width 1350px)
+  .user-block
+    padding-left 1%
+    padding-right 1%
+  
+  .user-block-link,
+  .user-block__tel-feedback
+    font-size 19px
+    line-height 22px
+    
+  .user-block__tel
+    margin-left 1.5%
+    
+  .user-block__tel-link
+    font-size 22px
+    line-height 25px
+    
+@media(max-width 1160px)
+  .user-block
+    &--header
+      .user-block__tel
+        display none
+    &--footer
+      .user-block-link
+        transition none
+        &::after
+          transition none
+        
+  .user-block-link,
+  .user-block__tel-feedbac
+    &::after
+      transition none
+      
+  .user-block__basket
+    transition none
+    
+@media(max-width 1000px)
+  .user-block
+    &--header
+      position fixed
+      top 0
+      left 0
+      right 0
+      z-index 10
+      
+      align-items flex-start
+      margin-bottom 0
+      padding 0
+      
+      background-color #ffffff
+      .user-block__basket
+        position relative
+        top auto
+        right auto
+        
+        box-sizing border-box
+        display flex
+        width 50%
+        flex-direction row-reverse
+        padding-top 5px
+        margin-left 0
+        padding 15px 10px
+      .user-block__basket-count
+        position static
+      .user-block__basket-icon
+        display none
+      .user-block__basket-currency-wrap
+        margin-right 10px
+      .user-block-list
+        display none
+        
+@media(max-width 860px)
+  .user-block
+    &--footer
+      flex-direction column
+      align-items flex-start
+      .user-block-list
+        justify-content space-around
+        width 100%
+        margin-bottom 15px
+      .user-block-items
+        margin-right 0
+      .user-block__tel
+        flex-direction row
+        justify-content center
+        width 100%
+        margin-left 0
+      .user-block__tel-link
+        margin-right 15px
+        margin-bottom 0
+        
+@media(max-width 580px)
+  .user-block
+    &--basket
+      .user-block__basket
+        justify-content center
+        width 100%
+        
+@media(max-width 490px)
+  .user-block
+    &--footer
+      flex-direction row
+      align-items center
+      padding-left 10px
+      padding-right 10px
+      .user-block-list
+        flex-direction column
+        width auto
+      .user-block__tel
+        flex-direction column
+      .user-block__tel-link
+        margin-right 0
+      .user-block__tel-feedback
+        align-self flex-end
+        
+@media(max-width 375px)
+  .user-block
+    &--footer
+      .user-block-list
+        align-items center
+        margin-bottom 0
+      .user-block-items
+        margin-bottom 15px
+      .user-block__tel
+        display none
+        
+    
+    

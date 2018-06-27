@@ -61,3 +61,110 @@
   margin 0 1.5%
   
   background-color #bdb66f
+  
+.main-nav__close
+  position absolute
+  top 20px
+  right 20px
+  
+  display none
+  width 30px
+  height 30px
+
+  exit(100%, 3px, #f04034)
+  
+@media(max-width 1700px)
+  .main-nav__list-headline,
+  .main-nav__link
+    font-size 14px
+    line-height 26px
+    
+@media(max-width 1400px)
+  .main-nav__items
+    margin-right 15px
+  
+  .main-nav__border
+    margin 0 0.8%
+    
+@media(max-width 1180px)
+  .main-nav
+    padding 5px 10px
+    padding-bottom 0
+  
+  .main-nav__list-headline, 
+  .main-nav__link
+    font-size 12px
+    line-height 26px
+    
+  .main-nav__list-headline,
+  .main-nav__link
+    padding-bottom 4px
+    
+    font-size 11px
+    line-height 27px
+    &::after
+      height 3px
+      
+@media(max-width 1160px)
+  .main-nav__link
+    transition none
+    &::after
+      transition none
+      
+@media(max-width 1000px)
+  .main-nav
+    display none
+    &--open
+      position fixed
+      top 0
+      left 0
+      right 0
+      bottom 0
+      z-index 30
+      
+      display flex
+      flex-direction column
+
+      background-color #ffffff
+
+      box-shadow none
+
+    .main-nav__list-headline
+      margin-top 20px
+      margin-right 0
+
+      text-align center
+      &--category
+        display none
+
+    .main-nav__list
+      flex-direction column
+      justify-content space-around
+      align-items center
+      &--category
+        display none
+
+    .main-nav__items
+      margin-right 0
+      margin-bottom 40px
+      &:last-child
+        margin-bottom 0
+
+    .main-nav__border
+      display none
+
+    .main-nav__list-headline,
+    .main-nav__link
+      font-size 23px
+      line-height 27px
+
+    .main-nav__close
+      display block
+      
+@media(max-width 375px)
+  .main-nav
+    .main-nav__items
+      margin-bottom 0
+      
+  
+    

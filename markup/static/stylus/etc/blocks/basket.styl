@@ -1,0 +1,700 @@
+.basket__headline
+  margin-bottom 30px
+  
+  font-size 32px
+  line-height 38px
+  color #000000
+  
+.basket__table
+  width 100%
+  margin-bottom 25px
+  
+.basket__table-tr
+  border-bottom 1px solid #eaeaea
+  
+  transition 0.2s ease
+  &:hover
+    background-color #FFFDF3
+  &--title
+    &:hover
+      background-color transparent
+  
+.basket__table-td
+  padding 15px 0
+  &--good-title
+    padding-left 70px
+  &--first
+    width 30%
+  &--last
+    width 17%
+    
+.basket__table-title-text
+  font-size 21px
+  line-height 25px
+  color #f04034
+  
+.basket__table-img-wrap
+  width 80px
+  height 67px
+  margin-right 20px
+  
+.basket__table-title-good-text
+  width 240px
+  
+  color #000000
+  
+.basket__table-title-good-price
+  font-size 21px 
+  line-height 25px
+  color #007700
+  &--text
+    margin-left 5px
+    
+.basket__table-count-wrap
+  box-sizing border-box
+  width 162px
+  height 49px
+  
+  border 1px solid #eaeaea
+  border-radius 5px
+  
+.basket__table-count-text
+  font-size 29px
+  line-height 44px
+  color #f04034
+  
+.basket__table-count-button
+  position relative
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    width 25%
+    height 3px
+    
+    background-color #ee423b
+  &::before
+    transform rotate(90deg)
+  &--dec
+    &::before
+      display none
+      
+.basket__table-cancel
+  position relative
+  
+  box-sizing border-box
+  width 27px
+  height 27px
+  
+  border 3px solid #dcdcdc
+  border-radius 50%
+  
+  cursor pointer
+  
+  transition 0.2s ease
+  
+  exit(70%, 3px, #dcdcdc)
+  &::before,
+  &::after
+    transition 0.2s ease
+  &:hover
+    border-color #ee423b
+    &::before
+    &::after
+      background-color #ee423b
+      
+.basket__total-price-wrap
+  margin-bottom 25px
+      
+.basket__total-price-pos
+  transform translateX(-55px)
+      
+.basket__total-price-text
+  margin-right 35px
+  
+  font-size 21px
+  line-height 25px
+  color #f04034
+  
+.basket__total-price-number,
+.basket__total-price-currency
+  font-size 21px
+  line-height 25px
+  color #007700
+  
+.basket__total-price-currency
+  margin-left 5px
+  
+.basket__order-wrap
+  box-sizing border-box
+  width 1185px
+  padding 40px 75px
+  padding-right 140px
+  
+  background-color #fffdf3
+  
+.basket__order-step-wrap
+  margin-right 10px
+  
+.basket__order-step-number
+  width 60px
+  height 60px
+  
+  font-size 37px
+  line-height 55px
+  color #696969
+  
+  background-color #fff8da
+  
+  border-radius 50%
+  
+.basket__order-step-line
+  width 1px
+  height 142px
+  
+  background-color #eaeaea
+  &--second
+    height 247px
+  &--last
+    height 225px
+  
+.basket__order-description-headline
+  margin-top 10px
+  margin-left 5px
+  margin-bottom 40px
+  
+  font-size 32px
+  line-height 38px
+  color #696969
+  
+.basket__order-description-list
+  &--contacts
+    margin-bottom 40px
+  &--data
+    margin-bottom 25px
+  
+.basket__order-description-items
+  margin-right 30px
+  &:last-child
+    margin-right 0
+  
+.basket__order-description-input
+  padding-top 10px
+  padding-left 20px
+  padding-right 20px
+  padding-bottom 15px
+  
+  background-color #ffffff
+  
+  border 1px solid #cbcac6
+  border-radius 5px
+  
+.basket__order-description-select
+  position relative
+  &--open
+    .basket__order-description-select-input
+      border-bottom-color transparent
+    .basket__order-description-select-input-indicator
+      &::before,
+      &::after
+        background-color #FA591F
+  
+.basket__order-description-select-input-wrap
+  position relative
+  
+  background-color #ffffff
+  
+  cursor pointer
+  &:hover
+    .basket__order-description-select-input-indicator
+      &::before,
+      &::after
+        background-color #FA591F
+  
+.basket__order-description-select-input
+  padding-top 10px
+  padding-left 20px
+  padding-right 20px
+  padding-bottom 15px
+  
+  border 1px solid #cbcac6
+  border-radius 5px
+  
+  cursor pointer
+  
+.basket__order-description-select-input-indicator
+  position absolute
+  top 0
+  right 17px
+  bottom 0
+  
+  width 17px
+  height 11px
+  margin auto
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    width 70%
+    height 3px
+  
+    background-color #dcdcdc
+    
+    transition 0.2s ease
+  &::before
+    left -7px
+    
+    transform rotate(45deg)
+  &::after
+    right -7px
+    
+    transform rotate(-45deg)
+    
+.basket__order-description-select-content
+  position absolute
+  left 0
+  right 0
+  
+  margin auto
+  
+  background-color #ffffff
+  
+  border 1px solid #cbcac6
+  border-top none
+  border-radius 0 0 5px 5px
+  
+.basket__order-description-select-text
+  padding-top 10px
+  padding-left 20px
+  padding-right 20px
+  padding-bottom 15px
+  
+  cursor pointer
+  
+  transition 0.2s ease
+  &:hover
+    color #ffffff
+    
+    background-color #FA591F
+    
+.basket__order-description-textarea-wrap
+  margin-bottom 40px
+    
+.basket__order-description-textarea
+  padding 20px
+  
+  background-color #ffffff
+  
+  border 1px solid #cbcac6
+  border-radius 5px
+  
+  resize none
+  
+.basket__order-description-list-headline
+  margin-bottom 15px
+  
+  color #696969
+  
+.basket__order-description-items
+  margin-bottom 25px
+  &:last-child
+    margin-bottom 0
+    
+.basket__order-description-radio
+  &:checked + .basket__order-description-radio-label
+    .basket__order-description-radio-label-indicator
+      border-color #ee423b
+      &::before
+        display block
+    
+.basket__order-description-radio-label
+  position relative
+  
+  padding-left 42px
+  
+  color #696969
+  
+  cursor pointer
+  &:hover
+    .basket__order-description-radio-label-indicator
+      border-color #ee423b
+  
+.basket__order-description-radio-label-indicator
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  
+  box-sizing border-box
+  width 24px
+  height 24px
+  margin auto
+  
+  border 2px solid #dcdcdc
+  border-radius 50%
+  
+  transition 0.2s ease
+  &::before
+    center-absolute()
+    
+    content ''
+    
+    display none
+    width 12px
+    height 12px
+    
+    background-color #ee423b
+    
+    border-radius 50%
+    
+.basket__order-total-wrap
+  box-sizing border-box
+  margin-bottom 24px
+  padding-top 30px
+  padding-left 80px
+  padding-bottom 30px
+  
+  background-color #fff8da
+  
+.basket__order-total-text-wrap
+  margin-bottom 30px
+  
+.basket__order-total-text
+  margin-top 10px
+  margin-right 30px
+  
+  font-size 21px
+  line-height 25px
+  color #696969
+  
+.basket__order-total-payment-num,
+.basket__order-total-payment-currency
+  font-size 32px
+  line-height 38px
+  color #f04034
+  
+.basket__order-total-payment-currency
+  margin-left 5px
+  
+.basket__order-total-conditions
+  position relative
+  
+  padding-left 35px
+  
+  font-size 16px
+  line-height 18px
+  color #373535
+  
+  cursor pointer
+  &:hover
+    .basket__order-total-conditions-indicator
+      border-color #d1313d
+  
+.basket__order-total-conditions-input
+  &:checked + .basket__order-total-conditions-indicator
+    background-color #d1313d
+    
+    border-color #d1313d
+    &::before,
+    &::after
+      display block
+  
+.basket__order-total-conditions-link
+  position relative
+  
+  margin-left 5px
+  
+  font-size 16px
+  line-height 18px
+  color #5c74c5
+  &::after
+    content ''
+    
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    
+    height 1px
+    margin auto
+    
+    background-color #5c74c5
+    
+    transition 0.2s ease
+  &:hover
+    &::after
+      transform translateY(2px)
+      
+      opacity 0
+      
+.basket__order-total-conditions-indicator
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  
+  box-sizing: border-box
+  width 21px
+  height 21px
+  margin auto
+  
+  border 2px solid #d3d3d3
+  border-radius 3px
+  
+  cursor pointer
+
+  transition .2s ease
+  &::before,
+  &::after
+    center-absolute()
+    
+    content ''
+    
+    display none
+    height 2px
+    
+    background-color #fffbee
+  &::before
+    top 4px
+    left:-8px
+    
+    width 35%
+    
+    transform rotate(45deg)
+  &::after
+    right -3px
+    
+    width 70%
+    
+    transform rotate(-45deg)
+    
+.basket__order-submit-button
+  box-sizing border-box
+  width 375px
+  margin-left 25px
+  padding-top 17px
+  padding-left 15px
+  padding-right 15px
+  padding-bottom 24px
+  
+  font-size 24px
+  line-height 29px
+  color #000000
+  
+  background-color #fed037
+  box-shadow 0px 2px 2px -1px rgba(0,0,0,0.3)
+  
+  border-radius 5px
+  
+  transition 0.2s ease
+  &:hover
+    background-color #F2C12C
+    
+.basket__table-cancel-mobile
+  display none
+    
+.basket__table-title-good-price-mobile-wrap
+  display none
+  .basket__table-title-text
+    margin-right 10px
+  .basket__table-title-good-price-mobile-row
+    margin-right 10px
+    &:nth-child(2)
+      margin-right 0
+  .basket__table-count-wrap
+    margin-top 15px
+    margin-left auto
+    margin-right auto
+    
+@media(max-width 1220px)
+  .basket__order-wrap
+    width auto
+    
+@media(max-width 1000px)
+  .basket__order-wrap
+    padding-left 20px
+    
+@media(max-width 940px)
+  .basket__table-td--good-title
+    padding-left 20px
+    
+  .basket__table-td
+    &--last
+      width 5%
+      
+  .basket__total-price-wrap
+    justify-content flex-end
+    padding-right 20px
+    
+  .basket__total-price-pos
+    transform translateX(0)
+    
+@media(max-width 840px)
+  .basket__order-wrap
+    padding-left 0
+    padding-right 0
+    padding-bottom 24px
+    
+  .basket__order-blocks-wrap
+    padding-left 20px
+    padding-right 20px
+    
+  .basket__order-step-wrap
+    display none
+  
+  .basket__table-title-text
+    font-size 17px
+    line-height 20px
+    
+  .basket__table-title-good-text
+    font-size 16px
+    line-height 19px
+    
+  .basket__table-title-good-price
+    font-size 17px
+    line-height 20px
+    
+  .basket__table-count-text
+    font-size 19px
+    line-height 37px
+    
+  .basket__table-count-wrap
+    width 102px
+    height 40px
+    
+  .basket__table-count-button
+    &::before,
+    &::after
+      width 16%
+      
+  .basket__order-description-headline
+    &--payment
+      display none
+      
+  .basket__order-description-list
+    margin-bottom 30px
+    
+  .basket__order-total-wrap
+    padding-left 20px
+    padding-right 20px
+    
+@media(max-width 640px)
+  .basket__table-td
+    padding 40px 10px
+    &:last-child
+      position relative
+      
+      padding 0
+    &--last
+      width 0
+    &--title
+      padding 20px 10px
+    
+  .basket__table-cancel
+    position absolute
+    top 5px
+    right 10px
+    
+  .basket__table-img-wrap
+    display none
+    
+  .basket__table-title-good-text
+    width 172px
+    
+    font-size 14px
+    line-height 17px
+    
+@media(max-width 530px)
+  .basket__headline
+    margin-bottom 10px
+    
+    font-size 21px
+  
+  .basket__table-tr
+    &:nth-child(2)
+      border-top 1px solid #eaeaea
+    &--title
+      display none
+  
+  .basket__table-td
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5)
+      display none
+      
+  .basket__table-td
+    &--good-title
+      position relative
+      
+      flex-direction column
+      padding 15px 10px
+      
+  .basket__table-title-good-text
+    width 320px
+    margin-left auto
+    margin-right auto
+    margin-bottom 10px
+    
+    font-size 18px
+    line-height 21px
+    
+  .basket__table-cancel-mobile
+    display block
+    
+  .basket__table-title-good-price-mobile-wrap
+    display block
+    
+  .basket__order-wrap
+    padding-top 10px
+    
+  .basket__order-description-headline
+    margin-bottom 10px
+    
+    font-size 21px
+    
+  .basket__order-blocks-wrap
+    padding-left 10px
+    padding-right 10px
+    
+  .basket__order-description-list
+    flex-direction column
+    
+  .basket__order-description-items
+    margin-right 0
+    
+  .basket__order-submit
+    padding-left 10px
+    padding-right 10px
+    
+  .basket__order-submit-button
+    box-sizing border-box
+    width 100%
+    margin-left 0
+    margin-right 0
+    padding-top 6px
+    padding-bottom 10px
+    
+@media(max-width 420px)
+  .basket__order-total-text-wrap
+    justify-content space-between
+    
+@media(max-width 370px)
+  .basket__order-total-text
+    margin-top 0
+    margin-right 10px
+    
+  .basket__order-total-payment-num,
+  .basket__order-total-payment-currency
+    font-size 23px
+    line-height 26px
+    
+@media(max-width 350px)
+  .basket__table-title-good-text
+    width auto
+    
+    

@@ -1,0 +1,32 @@
+.breadcrumbs__list
+  padding-left 4.1%
+
+.breadcrumbs__items
+  display flex
+  align-items center
+  margin-right 6px
+  &::after
+    content '>'
+    
+    margin-left 6px
+    
+    font-size 17px
+    line-height 20px
+    color #808084
+  &:last-child
+    margin-right 0
+    &::after
+      display none
+
+.breadcrumbs__link
+  font-size 17px
+  line-height 20px
+  color #808084
+  
+  transition 0.2s ease
+  &:hover
+    color #d53c36
+    
+@media(max-width 530px)
+  .breadcrumbs__list
+    padding-left 0

@@ -1,0 +1,309 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+
+    .wrapper
+      .content
+        header.page-header.page-header--basket
+          .container
+            .page-header__row-top.row.row--jc-sb
+              .page-header__row-top-delivery.row.row--ai-c
+                span.page-header__row-top-delivery-icon
+                p.page-header__row-top-delivery-text.text.text--fw400 Бесплатная доставка от 1000 руб.
+              .page-header__row-top-payment.row.row--ai-c
+                p.page-header__row-top-payment-text.text.text--fw400 Оплата наличными или по карте:
+                a.page-header__row-top-payment-link(href="#")
+              ul.socials.list.row
+                li.socials__items
+                  a.socials__link.socials__link--vk(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--fb(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--od(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--g(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--tw(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--v(href="#")
+                li.socials__items
+                  a.socials__link.socials__link--w(href="#")
+              .page-header__row-top-time.row.row--ai-c
+                span.page-header__row-top-time-icon
+                p.page-header__row-top-time-text.text.text--fw400 Пекарня работает с 9:00 до 21:00
+            .page-header__content
+              .user-block.user-block--header.user-block--basket.row.row--ai-c
+                .logo.logo--header.logo--basket
+                  .logo__img-wrap
+                    img.logo__img(src="%=static=%img/content/logo-header.svg" alt="Логотип")
+                  .logo__text-wrap
+                    h2.logo__headline.logo__headline--basket.text.text--uppercase.text--fw900 «Осетинская равнина»
+                    p.logo__text.text.text--fw500 осетинские пироги
+                ul.user-block-list.list.row.row--jc-sb.grow
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Каталог
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Доставка
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Оплата
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Акции
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Отзывы
+                  li.user-block-items
+                    a.user-block-link.text--td-none.text--fw500(href="#") Контакты
+                a.user-block__basket.text--td-none(href="#" data-total-price="0" data-count="0")
+                  span.user-block__basket-count.text--center.text--fw600 0
+                  span.user-block__basket-icon
+                  .user-block__basket-currency-wrap.row.row--jc-c
+                    p.user-block__basket-price.user-block__basket-price--num.text.text--fw600 0 
+                    p.user-block__basket-price.user-block__basket-price--text.text.text--fw600 руб.
+                .user-block__tel.column
+                  a.user-block__tel-link.text--td-none.text--fw600(href="tel:74952007580") +7 (495)200-75-80
+                  a.user-block__tel-feedback.text--td-none.text--fw500(href="#") Обратный звонок
+        main.page-content.page-content--basket
+          .breadcrumbs
+            .container
+              ul.breadcrumbs__list.list.row
+                li.breadcrumbs__items
+                  a.breadcrumbs__link.text--td-none.text--fw400(href="index.html") Главная
+                li.breadcrumbs__items
+                  a.breadcrumbs__link.text--td-none.text--fw400(href="index.html") Корзина
+          .basket
+            .container.container--basket
+              h2.basket__headline.text.text--fw600.text--center Ваша корзина
+              table.basket__table(data-total-price="1650" data-count="3")
+                tr.basket__table-tr.basket__table-tr--title
+                  td.basket__table-td.basket__table-td--title.basket__table-td--first
+                    p.basket__table-title-text.text.text--fw400.text--center Наименование
+                  td.basket__table-td.basket__table-td--title
+                    p.basket__table-title-text.text.text--fw400.text--center Цена
+                  td.basket__table-td.basket__table-td--title
+                    p.basket__table-title-text.text.text--fw400.text--center Стоимость
+                  td.basket__table-td.basket__table-td--title
+                    p.basket__table-title-text.text.text--fw400.text--center Количество
+                  td.basket__table-td.basket__table-td--last
+                tr.basket__table-tr.basket__table-tr--price(data-basic-price="550" data-total-price="550" data-count="1")
+                  td.basket__table-td.basket__table-td--good-title.row.row--ai-c
+                    .basket__table-cancel-mobile
+                      span.basket__table-cancel.d-block
+                    .basket__table-img-wrap
+                      img.basket__table-img(src="%=static=%img/content/basket-img.jpg")
+                    p.basket__table-title-good-text.text.text--fw600.text--center Со свекольными листьями и осетинским сыром
+                    .basket__table-title-good-price-mobile-wrap
+                      .row
+                        .basket__table-title-good-price-mobile-row.row
+                          p.basket__table-title-text.basket__table-title-text--mobile.text.text--fw400.text--center Цена
+                          p.basket__table-title-good-price.basket__table-title-good-price--mobile.text.text--fw600.text--center 550 руб.
+                        .basket__table-title-good-price-mobile-row.row
+                          p.basket__table-title-text.text.text--fw400.text--center Стоимость
+                          .row
+                            p.basket__table-title-good-price.basket__table-title-good-price--num.text.text--fw600 550
+                            p.basket__table-title-good-price.basket__table-title-good-price--text.text.text--fw600 руб.
+                      .basket__table-count-wrap.row
+                        button.basket__table-count-button.basket__table-count-button--dec.button(type="button")
+                        p.basket__table-count-text.text.text--fw500 1
+                        button.basket__table-count-button.basket__table-count-button--inc.button(type="button")
+                  td.basket__table-td
+                    p.basket__table-title-good-price.text.text--fw600.text--center 550 руб.
+                  td.basket__table-td
+                    .row.row--jc-c
+                      p.basket__table-title-good-price.basket__table-title-good-price--num.text.text--fw600 550
+                      p.basket__table-title-good-price.basket__table-title-good-price--text.text.text--fw600 руб.
+                  td.basket__table-td
+                    .row.row--jc-c
+                      .basket__table-count-wrap.row
+                        button.basket__table-count-button.basket__table-count-button--dec.button(type="button")
+                        p.basket__table-count-text.text.text--fw500 1
+                        button.basket__table-count-button.basket__table-count-button--inc.button(type="button")
+                  td.basket__table-td
+                    .row.row--jc-c
+                      span.basket__table-cancel.d-block
+                tr.basket__table-tr.basket__table-tr--price(data-basic-price="550" data-total-price="550" data-count="1")
+                  td.basket__table-td.basket__table-td--good-title.row.row--ai-c
+                    .basket__table-cancel-mobile
+                      span.basket__table-cancel.d-block
+                    .basket__table-img-wrap
+                      img.basket__table-img(src="%=static=%img/content/basket-img.jpg")
+                    p.basket__table-title-good-text.text.text--fw600.text--center Со свекольными листьями и осетинским сыром
+                    .basket__table-title-good-price-mobile-wrap
+                      .row
+                        .basket__table-title-good-price-mobile-row.row
+                          p.basket__table-title-text.basket__table-title-text--mobile.text.text--fw400.text--center Цена
+                          p.basket__table-title-good-price.basket__table-title-good-price--mobile.text.text--fw600.text--center 550 руб.
+                        .basket__table-title-good-price-mobile-row.row
+                          p.basket__table-title-text.text.text--fw400.text--center Стоимость
+                          .row
+                            p.basket__table-title-good-price.basket__table-title-good-price--num.text.text--fw600 550
+                            p.basket__table-title-good-price.basket__table-title-good-price--text.text.text--fw600 руб.
+                      .basket__table-count-wrap.row
+                        button.basket__table-count-button.basket__table-count-button--dec.button(type="button")
+                        p.basket__table-count-text.text.text--fw500 1
+                        button.basket__table-count-button.basket__table-count-button--inc.button(type="button")
+                  td.basket__table-td
+                    p.basket__table-title-good-price.text.text--fw600.text--center 550 руб.
+                  td.basket__table-td
+                    .row.row--jc-c
+                      p.basket__table-title-good-price.basket__table-title-good-price--num.text.text--fw600 550
+                      p.basket__table-title-good-price.basket__table-title-good-price--text.text.text--fw600 руб.
+                  td.basket__table-td
+                    .row.row--jc-c
+                      .basket__table-count-wrap.row
+                        button.basket__table-count-button.basket__table-count-button--dec.button(type="button")
+                        p.basket__table-count-text.text.text--fw500 1
+                        button.basket__table-count-button.basket__table-count-button--inc.button(type="button")
+                  td.basket__table-td
+                    .row.row--jc-c
+                      span.basket__table-cancel.d-block
+                tr.basket__table-tr.basket__table-tr--price(data-basic-price="550" data-total-price="550" data-count="1")
+                  td.basket__table-td.basket__table-td--good-title.row.row--ai-c
+                    .basket__table-cancel-mobile
+                      span.basket__table-cancel.d-block
+                    .basket__table-img-wrap
+                      img.basket__table-img(src="%=static=%img/content/basket-img.jpg")
+                    p.basket__table-title-good-text.text.text--fw600.text--center Со свекольными листьями и осетинским сыром
+                    .basket__table-title-good-price-mobile-wrap
+                      .row
+                        .basket__table-title-good-price-mobile-row.row
+                          p.basket__table-title-text.basket__table-title-text--mobile.text.text--fw400.text--center Цена
+                          p.basket__table-title-good-price.basket__table-title-good-price--mobile.text.text--fw600.text--center 550 руб.
+                        .basket__table-title-good-price-mobile-row.row
+                          p.basket__table-title-text.text.text--fw400.text--center Стоимость
+                          .row
+                            p.basket__table-title-good-price.basket__table-title-good-price--num.text.text--fw600 550
+                            p.basket__table-title-good-price.basket__table-title-good-price--text.text.text--fw600 руб.
+                      .basket__table-count-wrap.row
+                        button.basket__table-count-button.basket__table-count-button--dec.button(type="button")
+                        p.basket__table-count-text.text.text--fw500 1
+                        button.basket__table-count-button.basket__table-count-button--inc.button(type="button")
+                    .basket__table-cancel-mobile
+                      span.basket__table-cancel.d-block
+                  td.basket__table-td
+                    p.basket__table-title-good-price.text.text--fw600.text--center 550 руб.
+                  td.basket__table-td
+                    .row.row--jc-c
+                      p.basket__table-title-good-price.basket__table-title-good-price--num.text.text--fw600 550
+                      p.basket__table-title-good-price.basket__table-title-good-price--text.text.text--fw600 руб.
+                  td.basket__table-td
+                    .row.row--jc-c
+                      .basket__table-count-wrap.row
+                        button.basket__table-count-button.basket__table-count-button--dec.button(type="button")
+                        p.basket__table-count-text.text.text--fw500 1
+                        button.basket__table-count-button.basket__table-count-button--inc.button(type="button")
+                  td.basket__table-td
+                    .row.row--jc-c
+                      span.basket__table-cancel.d-block
+              .basket__total-price-wrap.row.row--jc-c
+                .basket__total-price-pos.row.row--ai-c
+                  p.basket__total-price-text.text.text--fw400 Итого:
+                  .basket__total-price-numbers-wrap.row
+                    p.basket__total-price-number.text.text--fw600 1 650
+                    p.basket__total-price-currency.text.text--fw600 руб.
+              form.basket__order-wrap(action="action.php" method="post")
+                .basket__order-blocks-wrap.row
+                  .basket__order-step-wrap.column.column--ai-c
+                    p.basket__order-step-number.text.text--fw600.text--center 1
+                    .basket__order-step-line
+                    p.basket__order-step-number.text.text--fw600.text--center 2
+                    .basket__order-step-line.basket__order-step-line--second
+                    p.basket__order-step-number.text.text--fw600.text--center 3
+                    .basket__order-step-line.basket__order-step-line--last
+                  .basket__order-description.grow
+                    h2.basket__order-description-headline.text.text--fw600 Контактная информация:
+                    ul.basket__order-description-list.basket__order-description-list--contacts.list.row
+                      li.basket__order-description-items.grow
+                        input.basket__order-description-input.input(type="text" name="userName" placeholder="Ваше имя")
+                      li.basket__order-description-items.grow
+                        input.basket__order-description-input.input(type="tel" name="userTel" placeholder="Введите телефон")
+                    h2.basket__order-description-headline.text.text--fw600 Данные о доставке:
+                    ul.basket__order-description-list.basket__order-description-list--data.list.row
+                      li.basket__order-description-items.grow
+                        .basket__order-description-select
+                          .basket__order-description-select-input-wrap
+                            input.basket__order-description-select-input.input(type="text" value="Ближайшая станция метро" readonly)
+                            span.basket__order-description-select-input-indicator
+                          .basket__order-description-select-content.hidden
+                            p.basket__order-description-select-text.text Ближайшая станция метро
+                            p.basket__order-description-select-text.text Смоленская
+                            p.basket__order-description-select-text.text Арбатская
+                      li.basket__order-description-items.grow
+                        input.basket__order-description-input.input(type="text" name="userAddress" placeholder="Адрес доставки")
+                    .basket__order-description-textarea-wrap
+                      textarea.basket__order-description-textarea.input(placeholder="Комментарий к заказу")
+                    h2.basket__order-description-headline.basket__order-description-headline--payment.text.text--fw600 Способы оплаты:
+                    h3.basket__order-description-list-headline.text.text--fw600 Выберите способ оплаты:
+                    ul.basket__order-description-list.basket__order-description-list--radio.list
+                      li.basket__order-description-items
+                        input.basket__order-description-radio.input.input--radio(type="radio" name="paymentGroup" checked)#cash
+                        label.basket__order-description-radio-label.d-block(for="cash") Наличными курьеру
+                          span.basket__order-description-radio-label-indicator.d-block
+                      li.basket__order-description-items
+                        input.basket__order-description-radio.input.input--radio(type="radio" name="paymentGroup")#card
+                        label.basket__order-description-radio-label.d-block(for="card") Банковская карта
+                          span.basket__order-description-radio-label-indicator.d-block
+                      li.basket__order-description-items
+                        input.basket__order-description-radio.input.input--radio(type="radio" name="paymentGroup")#bank
+                        label.basket__order-description-radio-label.d-block(for="bank") Сбербанк онлайн
+                          span.basket__order-description-radio-label-indicator.d-block
+                .basket__order-total-wrap
+                  .basket__order-total-text-wrap.row
+                    p.basket__order-total-text.text.text--fw600 Итого к оплате:
+                    .basket__order-total-payment-wrap.row
+                      p.basket__order-total-payment-num.text.text--fw600 1 650
+                      p.basket__order-total-payment-currency.text.text--fw600 руб.
+                  label.basket__order-total-conditions.d-block Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики обработки
+                    a.basket__order-total-conditions-link.text--td-none(href="#") персональных данных
+                    input.basket__order-total-conditions-input.input.input--checkbox(type="checkbox" checked) 
+                    span.basket__order-total-conditions-indicator.d-block
+                .basket__order-submit
+                  button.basket__order-submit-button.button.text--fw500(type="button") Оформить заказ
+                        
+                
+        
+      footer.page-footer
+        .footer-content
+          .container
+            .user-block.user-block--footer.row.row--ai-c
+              .logo.logo--footer
+                .logo__img-wrap
+                  img.logo__img(src="%=static=%img/content/logo-header.svg" alt="Логотип")
+                .logo__text-wrap
+                  h2.logo__headline.text.text--uppercase.text--fw900 «Осетинская
+                    br
+                    | равнина»
+                  p.logo__text.text.text--fw500 осетинские пироги
+              ul.user-block-list.list.row.grow
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Каталог
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Доставка
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Оплата
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Акции
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Отзывы
+                li.user-block-items
+                  a.user-block-link.text--td-none.text--fw500(href="#") Контакты
+              .user-block__tel.column
+                a.user-block__tel-link.text--td-none.text--fw600.text--right(href="tel:74952007580") +7 (495)200-75-80
+                a.user-block__tel-feedback.text--td-none.text--fw500(href="#") Москва, Большой переулок, 23
+            .footer-content__yandex-analytics.row.row--jc-fe
+              .footer-content__yandex-analytics-img-wrap
+                img.footer-content__yandex-analytics-img(src="%=static=%img/content/yandex-analytics.png" alt="Яндекс аналитика")
+            .footer-content__copyright.row.row--jc-sb.row--ai-c
+              p.footer-content__copyright-text.text © 2006 - 2018 Пекарня «Осетинская равнина»
+              a.footer-content__copyright-developers-link.text--td-none.row.row--ai-c(href="#")
+                p.footer-content__copyright-developers-text.text Создание и продвижение сайтов
+                .footer-content__copyright-developers-img-wrap
+                  img.footer-content__copyright-developers-img(src="%=static=%img/content/developers.png" alt="Разработчики")
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

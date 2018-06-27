@@ -2,6 +2,12 @@
   position relative
   
   margin-right 4%
+  &--footer
+    .logo__img-wrap
+      background-color #db3148
+    .logo__headline,
+    .logo__text
+      color #ff9d7a
   
 .logo__img-wrap
   position absolute
@@ -22,6 +28,8 @@
   margin-left 140px
 
 .logo__headline
+  width 200px
+  
   font-size 21px
   line-height 25px
   color #f04034
@@ -29,3 +37,96 @@
 .logo__text
   font-size 21px
   line-height 25px
+  
+.logo__burger-icon
+  display none
+  width 30px
+  height 30px
+  
+  cursor pointer
+  .burger
+    width 30px
+    height 30px
+    
+    fill #f04034
+  
+@media(max-width 1500px)
+  .logo
+    margin-right 0
+    
+@media(max-width 1350px)
+  .logo__headline
+    width 175px
+    
+    font-size 19px
+    line-height 22px
+    
+  .logo__text
+    font-size 19px
+    line-height 22px
+    
+@media(max-width 1190px)
+  .logo__img-wrap
+    left -10px
+    
+  .logo__text-wrap
+    margin-left 141px
+    
+@media(max-width 1160px)
+  .logo
+    &--footer
+      .logo__img-wrap
+        display none
+      .logo__text-wrap
+        display none
+        
+@media(max-width 1000px)
+  .logo
+    &--header
+      box-sizing border-box
+      display flex
+      align-items center
+      width 50%
+      padding 15px 10px
+      padding-bottom 14px
+      .logo__img-wrap
+        display none
+      .logo__text-wrap
+        order 1
+        margin-left auto
+        margin-right auto
+      .logo__text
+        display none
+      .logo__headline
+        width auto
+        
+  .logo__burger-icon
+    display block
+    
+@media(max-width 700px)
+  .logo
+    &--header
+     .logo__headline
+        font-size 15px
+        line-height 18px
+        &--basket
+          font-size 19px
+          line-height 23px
+          
+@media(max-width 620px)
+  .logo
+    &--header
+     .logo__headline
+       &--basket
+        font-size 15px
+        line-height 28px
+        
+@media(max-width 580px)
+  .logo
+    &--header
+      .logo__text-wrap
+        display none
+    &--basket
+      display none
+        
+    
