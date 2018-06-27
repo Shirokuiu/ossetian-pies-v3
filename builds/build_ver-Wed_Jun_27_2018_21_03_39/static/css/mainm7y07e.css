@@ -947,7 +947,7 @@ img {
 }
 @media (max-width: 1000px) {
   .page-header {
-    min-height: auto;
+    min-height: 100%;
   }
   .page-header--basket {
     margin-bottom: 80px;
@@ -2610,9 +2610,14 @@ img {
 }
 .best-sellers__slider .owl-prev span,
 .best-sellers__slider .owl-next span {
-  position: relative !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 8px !important;
   height: 16px !important;
+  margin: auto;
   font-size: 0 !important;
 }
 .best-sellers__slider .owl-prev span::before,
